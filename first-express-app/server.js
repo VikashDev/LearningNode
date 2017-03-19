@@ -24,6 +24,16 @@ webapp.get('/contact', (req, res) => {
     res.sendFile(__dirname + '/public/contact.html');
 });
 
+webapp.get('/signup', (req, res) => {
+    res.sendFile(__dirname + '/public/signup.html');
+});
+
+webapp.post('/signup', (req, res) => {
+    console.log(req);
+    res.sendFile(__dirname + '/public/result.html');
+});
+
+
 
 webapp.listen(3000, () => {
 
